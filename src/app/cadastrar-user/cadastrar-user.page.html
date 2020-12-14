@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-icon name="person-outline" slot="start"></ion-icon>
+          <ion-label position="floating">Nome</ion-label>
+          <ion-input [(ngModel)]="usuario.nome" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="mail-outline"  slot="start" ></ion-icon>
+          <ion-label position="floating">E-mail</ion-label>
+          <ion-input [(ngModel)]="usuario.email" type="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input [(ngModel)]="usuario.senha" type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+          <ion-label position="floating">Confirmar Senha</ion-label>
+          <ion-input [(ngModel)]="usuario.confirmarSenha" type="password"></ion-input>
+        </ion-item>
+        <ion-button class="confirma" expand="full" fill="clear" (click)="criarUser();">Confirmar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+</ion-content>
+
+ 

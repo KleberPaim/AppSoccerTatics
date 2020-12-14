@@ -1,0 +1,37 @@
+<ion-content padding class="background" >
+  
+  <ion-grid>
+
+    <ion-row> 
+      <ion-col>
+        <h1 class="app">NOME DO APP</h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-icon name="mail-outline"  slot="start" ></ion-icon>
+          <ion-label  position="floating">E-mail</ion-label>
+          <ion-input  type="email" [(ngModel)]="login.email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input  type="password" [(ngModel)]="login.senha"></ion-input>
+        </ion-item>
+        <ion-button class="log" expand="full"(click)="fazerlog();">Logar</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button	class="cadastro" router-direction="root" fill="clear" expand="full" (click)="fazerCadastro();">Cadastar-se</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+    
+  
+
+</ion-content>
